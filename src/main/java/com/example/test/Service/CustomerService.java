@@ -12,7 +12,8 @@ public class CustomerService {
     @Autowired
     private CustomerRepository customerRepository;
 
-    public List<Customer> show() {
+    // get customer list
+    public List<Customer> index() {
         return customerRepository.findAll();
     }
 }
