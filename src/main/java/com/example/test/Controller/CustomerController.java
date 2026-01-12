@@ -11,6 +11,7 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
+    // url mapping
     @GetMapping("/test/customer")
     public String show(Model model) {
         model.addAttribute("customer", customerService.index());
